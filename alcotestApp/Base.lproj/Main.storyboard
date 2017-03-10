@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6yt-dV-dKM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="alcotestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7RX-Jt-0MY" userLabel="biere Count">
+                                <rect key="frame" x="54" y="95" width="122" height="115"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="biere"/>
+                                <connections>
+                                    <action selector="drinkPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kaM-6V-RGW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSv-xF-PqD" userLabel="whiskey Count">
+                                <rect key="frame" x="54" y="279" width="122" height="115"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="whiskycarre"/>
+                                <connections>
+                                    <action selector="drinkPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4rG-Fy-wI8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V0w-DG-x1u">
+                                <rect key="frame" x="223" y="279" width="122" height="115"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="porto"/>
+                                <connections>
+                                    <action selector="drinkPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H4c-Yq-meH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Z2-j9-TXB">
+                                <rect key="frame" x="299" y="219" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="drinkUnpressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mty-Hr-NVH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7i5-gw-mq9">
+                                <rect key="frame" x="130" y="219" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="drinkUnpressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7TQ-va-2z7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lew-n0-AZK">
+                                <rect key="frame" x="130" y="409" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="drinkUnpressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g76-2m-Iq2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pI5-SY-PLD">
+                                <rect key="frame" x="299" y="409" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="drinkUnpressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rzZ-Ff-lfa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxv-z0-vLx">
+                                <rect key="frame" x="111" y="224" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XRQ-Df-th2">
+                                <rect key="frame" x="282" y="224" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fry-O2-UcH">
+                                <rect key="frame" x="111" y="412" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3G-KZ-hJ3">
+                                <rect key="frame" x="282" y="414" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63G-6h-SyW">
+                                <rect key="frame" x="160" y="584" width="87" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Syu-Ag-pPD">
+                                <rect key="frame" x="244" y="462" width="80" height="50"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mon dernier verre :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jp3-ax-590">
+                                <rect key="frame" x="54" y="462" width="140" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Taux d'alcool estimé" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uhx-kM-W7c">
+                                <rect key="frame" x="122" y="535" width="162" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ACp-tM-Es8">
+                                <rect key="frame" x="122" y="629" width="150" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYs-FM-PLz">
+                                <rect key="frame" x="303" y="550" width="56" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.69114921005917451" green="0.25873434642604221" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYd-N5-9EU" userLabel="wine Count">
+                                <rect key="frame" x="217" y="95" width="135" height="115"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="vinrouge"/>
+                                <connections>
+                                    <action selector="drinkPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MOb-Tp-6Wh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qTW-7F-hb6">
+                        <barButtonItem key="rightBarButtonItem" title="Profil" id="DOM-ED-kD5">
+                            <connections>
+                                <action selector="profileButtonPressed:" destination="BYZ-38-t0r" id="Syr-86-r5U"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="alcoolRate" destination="63G-6h-SyW" id="Zsz-fS-tEu"/>
+                        <outlet property="biereCount" destination="yxv-z0-vLx" id="BzS-PW-wSN"/>
+                        <outlet property="labOups" destination="cYs-FM-PLz" id="Vne-gz-5kn"/>
+                        <outlet property="pickerView" destination="Syu-Ag-pPD" id="1Rg-GS-r4n"/>
+                        <outlet property="portoCount" destination="c3G-KZ-hJ3" id="CD0-Bf-jBZ"/>
+                        <outlet property="progressBar" destination="ACp-tM-Es8" id="TeS-17-NhR"/>
+                        <outlet property="whiskyCount" destination="Fry-O2-UcH" id="fwQ-7h-i38"/>
+                        <outlet property="wineCount" destination="XRQ-Df-th2" id="xpK-zs-W3c"/>
+                        <segue destination="ADS-6A-IK0" kind="show" identifier="mainToProfile" id="eQp-HI-gzk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1056.8" y="123.68815592203899"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="1d7-zb-wjV">
+            <objects>
+                <viewController id="ADS-6A-IK0" customClass="ViewController_2" customModule="alcotestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nUN-zF-zXi"/>
+                        <viewControllerLayoutGuide type="bottom" id="qdE-3E-RZD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jj6-O7-JZy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aNs-Gc-910">
+                                <rect key="frame" x="28" y="226" width="320" height="216"/>
+                            </pickerView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hhR-hA-eEx">
+                                <rect key="frame" x="110" y="128" width="157" height="29"/>
+                                <segments>
+                                    <segment title="Homme"/>
+                                    <segment title="Femme"/>
+                                </segments>
+                                <connections>
+                                    <action selector="genderSegmented:" destination="ADS-6A-IK0" eventType="valueChanged" id="nmf-kZ-JrB"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Poids" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lAi-ky-PQ4">
+                                <rect key="frame" x="167" y="218" width="43" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aNs-Gc-910" firstAttribute="centerX" secondItem="jj6-O7-JZy" secondAttribute="centerX" id="6Q9-tm-BZT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lAi-ky-PQ4" secondAttribute="trailing" constant="149" id="Dlm-bz-Vhb"/>
+                            <constraint firstItem="hhR-hA-eEx" firstAttribute="leading" secondItem="jj6-O7-JZy" secondAttribute="leadingMargin" constant="94" id="MbB-E6-Nqz"/>
+                            <constraint firstItem="lAi-ky-PQ4" firstAttribute="leading" secondItem="jj6-O7-JZy" secondAttribute="leadingMargin" constant="151" id="fc0-Ej-gDj"/>
+                            <constraint firstItem="lAi-ky-PQ4" firstAttribute="top" secondItem="hhR-hA-eEx" secondAttribute="bottom" constant="62" id="hTF-IA-oUV"/>
+                            <constraint firstItem="aNs-Gc-910" firstAttribute="centerY" secondItem="jj6-O7-JZy" secondAttribute="centerY" id="lI8-YZ-V3M"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hhR-hA-eEx" secondAttribute="trailing" constant="92" id="o1S-AZ-drg"/>
+                            <constraint firstItem="hhR-hA-eEx" firstAttribute="top" secondItem="nUN-zF-zXi" secondAttribute="bottom" constant="64" id="vee-87-HrK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="genderSegmentedCt" destination="hhR-hA-eEx" id="Id9-Hk-1ty"/>
+                        <outlet property="pickerView_2" destination="aNs-Gc-910" id="HN6-iv-bFb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NSw-Zw-i81" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1781.5999999999999" y="123.68815592203899"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QJG-Me-Sdw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6yt-dV-dKM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uwG-la-Mxd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="2ma-s2-fHe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L94-Mw-I3f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="372" y="124"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="biere" width="1691" height="1691"/>
+        <image name="porto" width="600" height="600"/>
+        <image name="vinrouge" width="600" height="600"/>
+        <image name="whiskycarre" width="900" height="900"/>
+    </resources>
+</document>
